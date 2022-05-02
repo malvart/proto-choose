@@ -1,9 +1,9 @@
-class Category < ActiveHash::Base
+class MainDish < ActiveHash::Base
   self.data = [
     { id: 1, name: '--' },
-    { id: 2, name: '主食' },
-    { id: 3, name: '主菜' },
-    { id: 4, name: '副菜' },
+    { id: 2, name: '和食' },
+    { id: 3, name: '洋食' },
+    { id: 4, name: '中華' },
     { id: 5, name: 'その他' }
   ]
 

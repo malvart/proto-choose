@@ -4,7 +4,7 @@ a{
 
 .main{
   background-color: #f8f4e6; //アイボリー
-  height: 100vh;
+  height: auto;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -38,7 +38,7 @@ a{
       a{
         background-color: #ffedab;
         color: #001e43; //ミッドナイトブルー
-        margin-left: 10px;
+        margin: 1px 5px;
         border-top: 1.5px solid #001e43df;
         border-left: 1.5px solid #001e43df;
         border-bottom: 3.3px solid #001e43df;
