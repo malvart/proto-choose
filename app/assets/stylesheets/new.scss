@@ -1,6 +1,5 @@
 .new-cooking-content{
   font-family: '筑紫A丸ゴシック';
-  font-weight: bold;
   width: 800px;
   border-left: 2px solid black;
   border-right: 2px solid black;
@@ -8,23 +7,44 @@
     margin: 30px;
   }
   .form-title{
+    font-weight: bold;
     width: 450px;
     text-align: center;
     font-size: 30px;
     border-bottom: 3px dashed black;
-    margin: 10px auto 50px;
+    margin: 10px auto 60px;
   }
   .cooking-name{
-    width: 300px;
+    width: 80%;
     margin: 0 auto 0;
   }
   .form-heading{
     font-size: 24px;
     text-align: center;
+    font-weight: bold;
   }
   .cooking-text{
     font-size: 20px;
-    width: 100%;
+    width: 70%;
     padding: 0 15px;
+    display: block;
+    margin: auto;
+    border: 1.5px solid black;
+    border-radius: 15px;
+    text-align: center;
+  }
+  .category{
+    width: 300px;
+    margin: 0 auto 0;
+  }
+  .select-box{
+    font-size: 20px;
+    width: 50%;
+    padding: 5px 15px;
+    display: block;
+    margin: auto;
+    border: 1.5px solid black;
+    border-radius: 15px;
+    text-align: center;
   }
 }

@@ -18,6 +18,7 @@
         <div class='form-heading'>
           カテゴリー
         </div>
+        <%= f.collection_select :category_id, Category.all, :id, :name, {}, {class:"select-box"} %>
       </div>
     </div>
 
