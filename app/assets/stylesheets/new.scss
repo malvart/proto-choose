@@ -39,7 +39,7 @@
     border-radius: 15px;
     text-align: center;
   }
-  .category{
+  .cat{
     width: 300px;
     margin: 0 auto 0;
   }
@@ -56,11 +56,12 @@
   .form-btn-content{
     margin: 50px 0 15px;
     .ok-btn{
-      font-size: 24px;
+      font-size: 20px;
+      font-weight: bold;
       background-color: #ffedab;
       display: block;
       margin: auto;
-      padding: 0 10px;
+      padding: 2px 15px;
       border: 1.5px solid black;
       border-radius: 15px;
       text-align: center;

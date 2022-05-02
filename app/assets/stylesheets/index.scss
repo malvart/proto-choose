@@ -5,6 +5,7 @@ a{
 .main{
   background-color: #f8f4e6; //アイボリー
   height: auto;
+  min-height: calc(100vh - 90px - 100px);
   width: 100vw;
   display: flex;
   justify-content: center;

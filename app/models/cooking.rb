@@ -16,7 +16,12 @@ class Cooking < ApplicationRecord
   
   private
   def category_valid?
-    if (staple_food_id == 1) && (main_dish_id == 1) && (side_dish_id == 1)
+    sfi = (staple_food_id == 1)
+    mdi = (main_dish_id == 1)
+    sdi = (side_dish_id == 1)
+    if sfi && mdi && sdi
+      false
+    elsif (!sfi && !mdi) || (!mdi && !sdi) || (!sfi && !sdi)
       false
     else
       true

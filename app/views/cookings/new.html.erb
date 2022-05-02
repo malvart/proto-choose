@@ -20,38 +20,38 @@
     </div>
 
     <div class='form'>
-      <div class='category'>
+      <div class='cat'>
         <div class='form-heading'>
           カテゴリー
         </div>
-        <%= f.collection_select :category_id, Category.all, :id, :name, {}, {class:"select-box"} %>
+        <%= f.collection_select :category_id, Category.all, :id, :name, {}, {class:"select-box", id:'category'} %>
       </div>
     </div>
 
-    <div class='form'>
-      <div class='category'>
+    <div class='form' , id='form-cat2'>
+      <div class='cat' , id='cat2'>
         <div class='form-heading'>
           主食
         </div>
-        <%= f.collection_select :staple_food_id, StapleFood.all, :id, :name, {}, {class:"select-box"} %>
+        <%= f.collection_select :staple_food_id, StapleFood.all, :id, :name, {}, {class:"select-box", id:'cat-val2'} %>
       </div>
     </div>
 
-    <div class='form'>
-      <div class='category'>
+    <div class='form' , id='form-cat3'>
+      <div class='cat' , id='cat3'>
         <div class='form-heading'>
           主菜
         </div>
-        <%= f.collection_select :main_dish_id, MainDish.all, :id, :name, {}, {class:"select-box"} %>
+        <%= f.collection_select :main_dish_id, MainDish.all, :id, :name, {}, {class:"select-box", id:'cat-val3'} %>
       </div>
     </div>
 
-    <div class='form'>
-      <div class='category'>
+    <div class='form' , id='form-cat4'>
+      <div class='cat' , id='cat4'>
         <div class='form-heading'>
           副菜
         </div>
-        <%= f.collection_select :side_dish_id, SideDish.all, :id, :name, {}, {class:"select-box"} %>
+        <%= f.collection_select :side_dish_id, SideDish.all, :id, :name, {}, {class:"select-box", id:'cat-val4'} %>
       </div>
     </div>
 
