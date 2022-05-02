@@ -12,10 +12,10 @@ class Cooking < ApplicationRecord
     validates :category_id
   end
 
-  validates :category_valid?, presence: true
+  validate :category_valid
   
   private
-  def category_valid?
+  def category_valid
     sfi = (staple_food_id == 1)
     mdi = (main_dish_id == 1)
     sdi = (side_dish_id == 1)
