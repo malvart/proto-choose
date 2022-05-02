@@ -1,0 +1,27 @@
+<%= render partial: "header" %>
+<div class='main'>
+  <div class='new-cooking-content'>
+    <div class='form-title'>新しいお料理に関する詳細</div>
+    <%= form_with model: @cooking, url: new_cooking_path, id: 'new_cooking', local: true do |f| %>
+
+    <div class='form'>
+      <div class='cooking-name'>
+        <div class='form-heading'>
+          お料理名
+        </div>
+        <%= f.text_field :cooking_name, class:'cooking-text', placeholder:'例: ハンバーグ' %>
+      </div>
+    </div>
+
+    <div class='form'>
+      <div class='category'>
+        <div class='form-heading'>
+          カテゴリー
+        </div>
+      </div>
+    </div>
+
+    <% end %>
+  </div>
+</div>
+<%= render partial: "footer" %>

@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  root to: 'cooking#index'
-  resources :cooking, only: :index
+  root to: 'cookings#index'
+  resources :cookings, only: [:index, :new, :create]
 end
