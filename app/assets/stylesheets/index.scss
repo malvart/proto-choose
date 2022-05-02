@@ -4,7 +4,8 @@ a{
 
 .main{
   background-color: #f8f4e6; //アイボリー
-  height: 100vh;
+  height: auto;
+  min-height: calc(100vh - 90px - 100px);
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -38,8 +39,11 @@ a{
       a{
         background-color: #ffedab;
         color: #001e43; //ミッドナイトブルー
-        margin-left: 10px;
-        border: 3px solid #001e43df;
+        margin: 1px 5px;
+        border-top: 1.5px solid #001e43df;
+        border-left: 1.5px solid #001e43df;
+        border-bottom: 3.3px solid #001e43df;
+        border-right: 3.3px solid #001e43df;
         border-radius: 15px;
         padding: 0 8px;
       }
