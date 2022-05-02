@@ -1,0 +1,61 @@
+a{
+  text-decoration: none;
+}
+
+.main{
+  background-color: #f8f4e6; //アイボリー
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  #main-flame{
+    border: 2px dashed #192f6050; //アイアンブルー
+    border-radius: 30px;
+    padding: 30px;
+  }
+  .content{
+    width: 750px;
+  }
+  .side-bar{
+    background-color: #ffedab; //サンシャインイエロー
+    height: auto;
+    width: 250px;
+  }
+  .heading{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px 10px;
+    font-family: '凸版文久見出しゴシック';
+    color: #001e43; //ミッドナイトブルー
+    .heading-text{
+      font-size: 36px;
+    }
+    .rog-in-confirmation{
+      display: flex;
+      font-size: 18px;
+      align-self: flex-end;
+      a{
+        background-color: #ffedab;
+        color: #001e43; //ミッドナイトブルー
+        margin-left: 10px;
+        border: 3px solid #001e43df;
+        border-radius: 15px;
+        padding: 0 8px;
+      }
+    }
+  }
+  .main-text{
+    background-color: #bccddb; //パウダーブルー
+    height: auto;
+    width: 720px;
+    font-size: 18px;
+    font-family: '筑紫A丸ゴシック';
+    font-weight: bold;
+  }
+  .recommendation{
+    font-size: 18px;
+    font-family: '筑紫A丸ゴシック';
+    font-weight: bold;
+  }
+}

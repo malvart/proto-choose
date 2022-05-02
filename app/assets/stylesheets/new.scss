@@ -1,0 +1,30 @@
+.new-cooking-content{
+  font-family: '筑紫A丸ゴシック';
+  font-weight: bold;
+  width: 800px;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  .form{
+    margin: 30px;
+  }
+  .form-title{
+    width: 450px;
+    text-align: center;
+    font-size: 30px;
+    border-bottom: 3px dashed black;
+    margin: 10px auto 50px;
+  }
+  .cooking-name{
+    width: 300px;
+    margin: 0 auto 0;
+  }
+  .form-heading{
+    font-size: 24px;
+    text-align: center;
+  }
+  .cooking-text{
+    font-size: 20px;
+    width: 100%;
+    padding: 0 15px;
+  }
+}
