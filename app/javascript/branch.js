@@ -10,15 +10,20 @@ $(function (){
     let catVal = $('#category').val();
     if (catVal == 2){
       $('#form-cat2').after(cat2);
-      $('div').remove('#cat3, #cat4');
+      cat3.remove();
+      cat4.remove();
     } else if (catVal == 3){
       $('#form-cat3').after(cat3);
-      $('div').remove('#cat2, #cat4');
+      cat2.remove();
+      cat4.remove();
     } else if (catVal == 4){
       $('#form-cat4').after(cat4);
-      $('div').remove('#cat2, #cat3');
+      cat2.remove();
+      cat3.remove();
     } else {
-      $('div').remove('#cat2, #cat3, #cat4');
+      cat2.remove();
+      cat3.remove();
+      cat4.remove();
     }
   }
 })
