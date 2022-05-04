@@ -26,10 +26,17 @@ class CookingsController < ApplicationController
     redirect_to root_path
   end
 
-  def choose
-    @q = Cooking.ransack(params[:q])
-    @results = @q.result
+  def chooseIndex
+    @q = Cooking.order("RAND()").limit(1).ransack(params[:q])
+  end
+
+  def chooseSearch
+    @q = Cooking.order("RAND()").limit(1).ransack(params[:q])
+    @result = @q.result
     category_id = params[:q]
+    staple_food_id = params[:q]
+    main_dish_id = params[:q]
+    side_dish_id = params[:q]
   end
 
   private

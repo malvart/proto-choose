@@ -4,10 +4,10 @@ $(function (){
   const cat4 = $('#cat4');
   
   $(window).on('load', categoryCheck);
-  $('#category').on('change', categoryCheck);
+  $('#q_category_id_eq').on('change', categoryCheck);
 
   function categoryCheck(){
-    let catVal = $('#category').val();
+    let catVal = $('#q_category_id_eq').val();
     if (catVal == 2){
       $('#form-cat2').after(cat2);
       cat3.remove();
@@ -26,5 +26,6 @@ $(function (){
       cat4.remove();
     }
     $('.new-cooking-content').show();
+    $('.choose-content').show();
   }
 })
