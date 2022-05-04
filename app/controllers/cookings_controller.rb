@@ -26,6 +26,12 @@ class CookingsController < ApplicationController
     redirect_to root_path
   end
 
+  def choose
+    @q = Cooking.ransack(params[:q])
+    @results = @q.result
+    category_id = params[:q]
+  end
+
   private
   def cooking_params
     params.require(:cooking).permit(:cooking_name, :category_id, :staple_food_id,
