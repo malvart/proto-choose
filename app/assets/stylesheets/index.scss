@@ -13,7 +13,7 @@ a{
   #main-flame{
     border: 2px dashed #192f6050; //アイアンブルー
     border-radius: 30px;
-    padding: 30px;
+    padding: 25px 30px;
   }
   .content{
     width: 750px;
@@ -50,12 +50,51 @@ a{
     }
   }
   .main-text{
+    margin-top: 10px;
     background-color: #bccddb; //パウダーブルー
     height: auto;
     width: 720px;
     font-size: 18px;
     font-family: '筑紫A丸ゴシック';
     font-weight: bold;
+    .new-cooking{
+      text-align: center;
+      padding-bottom: 20px;
+      margin-bottom: 10px;
+      border-bottom: 2px dotted #001e43;
+      a{
+        background-color: #f8f4e6;
+        color: black;
+        padding: 6px 10px 7px;
+        border: 1.5px solid rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+      }
+    }
+    .lists-heading{
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .name-lists{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      font-size: 20px;
+      text-align: center;
+      .list-heading{
+        margin-bottom: 3px;
+      }
+      #lists{
+        width: 50%;
+        padding: 10px 20px;
+      }
+      #list{
+        font-size: 18px;
+      }
+      .show-link{
+        color: #47266e;
+      }
+    }
   }
   .recommendation{
     font-size: 18px;
