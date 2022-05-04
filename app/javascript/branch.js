@@ -25,5 +25,6 @@ $(function (){
       cat3.remove();
       cat4.remove();
     }
+    $('.new-cooking-content').show();
   }
 })

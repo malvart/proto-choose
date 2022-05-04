@@ -1,0 +1,25 @@
+<%= render partial: "header" %>
+
+<div class='show-cooking-content'>
+  <div class='show-heading'>
+    <%= @cooking.cooking_name %>
+  </div>
+
+  <div class='show-half'>
+    <div class='show-left'>
+      <div class='cooking-image'>
+        <%= image_tag 'cooking_frame_y.jpeg', class: 'cooking-frame' %>
+      </div>
+    </div>
+
+    <div class='show-right'>
+      <div class='show-recipe'>レシピ</div>
+    </div>
+  </div>
+
+  <div class='delete-cooking'>
+    <%= link_to "! この料理を削除する !", cooking_path, method: :delete, class: 'delete-btn' %>
+  </div>
+</div>
+
+<%= render partial: "footer" %>

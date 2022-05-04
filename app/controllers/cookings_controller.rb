@@ -1,5 +1,6 @@
 class CookingsController < ApplicationController
   def index
+    @cookings = Cooking.all.order('cooking_name ASC')
   end
 
   def new
@@ -13,6 +14,16 @@ class CookingsController < ApplicationController
     else
       render 'new'
     end
+  end
+
+  def show
+    @cooking = Cooking.find(params[:id])
+  end
+
+  def destroy
+    @cooking = Cooking.find(params[:id])
+    @cooking.destroy
+    redirect_to root_path
   end
 
   private
