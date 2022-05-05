@@ -1,9 +1,10 @@
-.another-header{
+.another-header {
   background-color: #ffedab50;
   height: 10px;
   width: 100vw;
 }
-.top-page-header{
+
+.top-page-header {
   background-color: #043c78; //インディゴ
   height: 80px;
   width: 100vw;
@@ -13,16 +14,19 @@
   padding: 0px 250px;
   border-top: 5px solid #192f60; //アイアンブルー
   border-bottom: 5px solid #192f60;
-  .app-name{
+
+  .app-name {
     font-size: 48px;
     font-family: Impact;
     color: #ffdc00; //ジョンブリアン
   }
-  .header-right{
+
+  .header-right {
     display: flex;
     font-family: 'Osaka';
     padding-top: 5px;
-    .choose-cooking{
+
+    .choose-cooking {
       background-color: #ffdc00;
       font-size: 20px;
       border: 1px solid #001e43;
@@ -30,11 +34,13 @@
       padding: 0 12px;
       color: #043c78;
     }
-    .sign-up{
+
+    .sign-up {
       margin-right: 15px;
       font-size: 16px;
     }
-    .rog-in{
+
+    .rog-in {
       font-size: 16px;
     }
   }

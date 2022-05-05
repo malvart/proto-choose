@@ -2,16 +2,35 @@
 <div class='top-contents'>
   <div class='search-content'>
 
-    <% if @result.length !=0 %>
-    <% @result.each do |r| %>
-    <li>
-    <%= r.cooking_name %>
-    </li>
-    <% end %>
-    <% else %>
-    該当する料理がありません
-    <% end %>
-  
+    <div class='result-content'>
+
+      <% if @result.length !=0 %>
+
+      <% @result.each do |r| %>
+      <div class='result'>
+        <p class='result-name'><%= r.cooking_name %></p>
+        <p class='result-text'>はいかがですか...？</p>
+      </div>
+
+      <div class='under-result'>
+        <div class='cooking-image'>
+          <%= image_tag 'no_image_yoko.jpeg', class: 'cooking-frame' %>
+        </div>
+        <div class='result-btns'>
+          <%= link_to 'これに決めた！', cooking_path(r.id), class: 'decide-this', id: 'result-btn' %>
+          <%= link_to '決めなおす', '', class: 're-decide', id: 'result-btn' %>
+          <%= link_to '条件を変える', chooseIndex_cookings_path, class: 'change-conditions', id: 'result-btn' %>
+        </div>
+      </div>
+
+
+      <% end %>
+
+      <% else %>
+      <div class='no-there'>該当する料理がありません</div>
+      <% end %>
+    </div>
+
   </div>
 </div>
 <%= render partial: "footer" %>
