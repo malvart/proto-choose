@@ -14,8 +14,8 @@
 
       <div class='under-result'>
         <div class='cooking-image'>
-          <% if @cooking.image.attached? %>
-          <%= image_tag @cooking.image, class: 'cooking-frame' %>
+          <% if r.image.attached? %>
+          <%= image_tag r.image, class: 'cooking-frame' %>
           <% else %>
           <%= image_tag 'no_image_yoko.jpeg', class: 'cooking-frame' %>
           <% end %>
