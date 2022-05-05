@@ -55,9 +55,22 @@
       </div>
     </div>
 
+    <div class='form'>
+      <div class='img-upload'>
+        <div class='form-heading'>
+          画像
+        </div>
+        <div class='previews', id='previews'></div>
+        <%= f.label :image, '画像を選択', class: 'img-file-btn' %>
+        <%= f.file_field :image, class:'img-file' %>
+      </div>
+    </div>
+
     <div class='form-btn-content'>
       <%= f.submit "入力OK!", class:'ok-btn' %>
     </div>
+
+    <div class='annotation'>※画像は後でも追加できます</div>
 
     <% end %>
   </div>

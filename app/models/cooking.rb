@@ -4,6 +4,7 @@ class Cooking < ApplicationRecord
   belongs_to :staple_food
   belongs_to :main_dish
   belongs_to :side_dish
+  has_one_attached :image
 
   with_options presence: true do
     validates :cooking_name
