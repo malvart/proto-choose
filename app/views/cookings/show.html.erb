@@ -1,5 +1,5 @@
 <%= render partial: "header" %>
-
+<div class='top-contents'>
 <div class='show-cooking-content'>
   <div class='show-heading'>
     <%= @cooking.cooking_name %>
@@ -8,7 +8,7 @@
   <div class='show-half'>
     <div class='show-left'>
       <div class='cooking-image'>
-        <%= image_tag 'cooking_frame_y.jpeg', class: 'cooking-frame' %>
+        <%= image_tag 'no_image_yoko.jpeg', class: 'cooking-frame' %>
       </div>
     </div>
 
@@ -21,5 +21,5 @@
     <%= link_to "! この料理を削除する !", cooking_path, method: :delete, class: 'delete-btn' %>
   </div>
 </div>
-
+</div>
 <%= render partial: "footer" %>

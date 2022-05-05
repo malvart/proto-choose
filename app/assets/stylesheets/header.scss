@@ -16,10 +16,7 @@
   .app-name{
     font-size: 48px;
     font-family: Impact;
-    color: #ffdc00;
-    a{
-      color: #ffdc00; //ジョンブリアン
-    }
+    color: #ffdc00; //ジョンブリアン
   }
   .header-right{
     display: flex;
@@ -30,10 +27,8 @@
       font-size: 20px;
       border: 1px solid #001e43;
       border-radius: 15px;
-      padding: 0 10px;
-      a{
-        color: #043c78;
-      }
+      padding: 0 12px;
+      color: #043c78;
     }
     .sign-up{
       margin-right: 15px;

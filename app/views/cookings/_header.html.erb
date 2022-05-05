@@ -1,12 +1,9 @@
 <div class='another-header'></div>
 <div class='top-page-header'>
-  <div class='app-name'>
-    <a href='/'>Choose.</a>
-  </div>
+    <%= link_to "Choose.", root_path, class: 'app-name' %>
   <div class='header-right'>
-    <div class='choose-cooking'>
-      <a href='#'>お料理を決める</a>
-    </div>
+      <%= link_to "お料理を決める", chooseIndex_cookings_path, class: 'choose-cooking' %>
+
     <%# ログイン確認
     <div class='sign-up'>
       <a href='#'>ログイン</a>
@@ -15,6 +12,7 @@
       <a href='#'>サインアップ</a>
     </div>
   %>
+  
   </div>
 </div>
 <div class='main'>

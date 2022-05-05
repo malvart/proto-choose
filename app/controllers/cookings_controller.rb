@@ -26,6 +26,19 @@ class CookingsController < ApplicationController
     redirect_to root_path
   end
 
+  def chooseIndex
+    @q = Cooking.order("RAND()").limit(1).ransack(params[:q])
+  end
+
+  def chooseSearch
+    @q = Cooking.order("RAND()").limit(1).ransack(params[:q])
+    @result = @q.result
+    category_id = params[:q]
+    staple_food_id = params[:q]
+    main_dish_id = params[:q]
+    side_dish_id = params[:q]
+  end
+
   private
   def cooking_params
     params.require(:cooking).permit(:cooking_name, :category_id, :staple_food_id,

@@ -1,0 +1,17 @@
+<%= render partial: "header" %>
+<div class='top-contents'>
+  <div class='search-content'>
+
+    <% if @result.length !=0 %>
+    <% @result.each do |r| %>
+    <li>
+    <%= r.cooking_name %>
+    </li>
+    <% end %>
+    <% else %>
+    該当する料理がありません
+    <% end %>
+  
+  </div>
+</div>
+<%= render partial: "footer" %>
