@@ -1,12 +1,13 @@
 .show-cooking-content {
   width: 70%;
   font-family: "筑紫A丸ゴシック";
+  font-weight: bold;
 
   .show-heading {
-    font-weight: bold;
+
     font-size: 42px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   .show-half {
@@ -16,8 +17,24 @@
     .show-left {
       width: 50%;
 
-      .cooking-frame {
-        max-width: 450px;
+      .cooking-image {
+        width: 400px;
+        margin: 25px auto;
+        .cooking-frame {
+          max-width: 400px;
+        }
+      }
+
+      .ingredient {
+        width: 400px;
+        margin: 0 auto;
+        border-left: 3px dashed rgba(0, 0, 0, 0.5);
+        border-right: 3px dashed rgba(0, 0, 0, 0.5);
+
+        .ingredient-title {
+          text-align: center;
+          font-size: 24px;
+        }
       }
     }
 
@@ -25,7 +42,7 @@
       width: 50%;
 
       .show-recipe {
-        font-size: 28px;
+        font-size: 24px;
         text-align: center;
       }
 
@@ -39,9 +56,9 @@
     margin-top: 50px;
 
     .delete-btn {
-      font-size: 24px;
+      font-size: 20px;
       color: white;
-      background-color: #e8383d;
+      background-color: #e95464;
       padding: 5px 15px;
       border: 2px solid rgba(0, 0, 0, 0.5);
       border-radius: 10px;
