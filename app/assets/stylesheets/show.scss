@@ -1,37 +1,44 @@
-.show-cooking-content{
+.show-cooking-content {
   width: 70%;
   font-family: "筑紫A丸ゴシック";
-  .show-heading{
+
+  .show-heading {
     font-weight: bold;
-    font-size: 48px;
+    font-size: 42px;
     text-align: center;
     margin-bottom: 20px;
   }
-  .show-half{
+
+  .show-half {
     display: flex;
     justify-content: space-between;
 
-    .show-left{
+    .show-left {
       width: 50%;
-      .cooking-frame{
+
+      .cooking-frame {
         max-width: 450px;
       }
     }
 
-    .show-right{
+    .show-right {
       width: 50%;
-      .show-recipe{
+
+      .show-recipe {
         font-size: 28px;
         text-align: center;
       }
+
       border-left: 3px dashed rgba(0, 0, 0, 0.5);
       border-right: 3px dashed rgba(0, 0, 0, 0.5);
     }
   }
-  .delete-cooking{
+
+  .delete-cooking {
     text-align: center;
     margin-top: 50px;
-    .delete-btn{
+
+    .delete-btn {
       font-size: 24px;
       color: white;
       background-color: #e8383d;
