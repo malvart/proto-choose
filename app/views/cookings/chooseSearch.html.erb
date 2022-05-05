@@ -14,7 +14,11 @@
 
       <div class='under-result'>
         <div class='cooking-image'>
+          <% if @cooking.image.attached? %>
+          <%= image_tag @cooking.image, class: 'cooking-frame' %>
+          <% else %>
           <%= image_tag 'no_image_yoko.jpeg', class: 'cooking-frame' %>
+          <% end %>
         </div>
         <div class='result-btns'>
           <%= link_to 'これに決めた！', cooking_path(r.id), class: 'decide-this', id: 'result-btn' %>

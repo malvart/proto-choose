@@ -1,4 +1,7 @@
 $(function (){
+  const searchContent = document.getElementsByClassName('search-content');
+  if (!searchContent) return null;
+
   const cat2 = $('#cat2');
   const cat3 = $('#cat3');
   const cat4 = $('#cat4');

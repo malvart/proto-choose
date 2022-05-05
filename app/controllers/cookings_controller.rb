@@ -42,6 +42,6 @@ class CookingsController < ApplicationController
   private
   def cooking_params
     params.require(:cooking).permit(:cooking_name, :category_id, :staple_food_id,
-                                    :main_dish_id, :side_dish_id)
+                                    :main_dish_id, :side_dish_id, :image)
   end
 end

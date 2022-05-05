@@ -1,28 +1,32 @@
 <%= render partial: "header" %>
 <div class='top-contents'>
-<div class='show-cooking-content'>
-  <div class='show-heading'>
-    <%= @cooking.cooking_name %>
-  </div>
+  <div class='show-cooking-content'>
+    <div class='show-heading'>
+      <%= @cooking.cooking_name %>
+    </div>
 
-  <div class='show-half'>
-    <div class='show-left'>
-      <div class='cooking-image'>
-        <%= image_tag 'no_image_yoko.jpeg', class: 'cooking-frame' %>
+    <div class='show-half'>
+      <div class='show-left'>
+        <div class='cooking-image'>
+          <% if @cooking.image.attached? %>
+          <%= image_tag @cooking.image, class: 'cooking-frame' %>
+          <% else %>
+          <%= image_tag 'no_image_yoko.jpeg', class: 'cooking-frame' %>
+          <% end %>
+        </div>
+        <div class='ingredient'>
+          <div class='ingredient-title'>─ 材料 ─</div>
+        </div>
       </div>
-      <div class='ingredient'>
-        <div class='ingredient-title'>─ 材料 ─</div>
+
+      <div class='show-right'>
+        <div class='show-recipe'>─ レシピ ─</div>
       </div>
     </div>
 
-    <div class='show-right'>
-      <div class='show-recipe'>─ レシピ ─</div>
+    <div class='delete-cooking'>
+      <%= link_to "! この料理を削除する !", cooking_path, method: :delete, class: 'delete-btn' %>
     </div>
   </div>
-
-  <div class='delete-cooking'>
-    <%= link_to "! この料理を削除する !", cooking_path, method: :delete, class: 'delete-btn' %>
-  </div>
-</div>
 </div>
 <%= render partial: "footer" %>
