@@ -93,12 +93,36 @@
 
 
     <div class='side-bar' , id='main-flame'>
-      <div class='recommendation'>今日のおすすめ</div>
+
+      <div class='recommend'>
+        <div class='recommend-header'>今日のおすすめ</div>
+        <div class='recommend-content'>
+
+
+          <% @random4.each do |random| %>
+          <div class='slide-recommend'>
+          <%= link_to cooking_path(random.id), method: :get do %>
+            <% if random.image.attached? %>
+            <%= image_tag random.image, class: 'slide-image' %>
+            <% else %>
+            <%= image_tag 'no_image_yoko.jpeg', class: 'slide-image' %>
+            <% end %>
+            <div class='slide-name'>
+              <%= random.cooking_name %>
+            </div>
+            <% end %>
+          </div>
+          <% end %>
+
+
+        </div>
+      </div>
+
     </div>
 
   </div>
 
   <div class='beneath-contents'>
   </div>
-  
+
   <%= render partial: "footer" %>

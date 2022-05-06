@@ -38,6 +38,8 @@
         .cooking-frame {
           max-width: 450px;
           max-height: 300px;
+          border: 2px solid #00000080;
+          border-radius: 10px;
         }
       }
 
@@ -68,12 +70,19 @@
         .change-conditions{
           background-color: #b2cbe4;
         }
+        .new-path-btn{
+          background-color: #a1d8e2;
+        }
+        .back-path-btn{
+          background-color: #d1bada;
+        }
       }
     }
   }
 
   .no-there {
+    text-align: center;
     font-size: 22px;
-    margin-top: 100px;
+    margin: 150px 0;
   }
 }

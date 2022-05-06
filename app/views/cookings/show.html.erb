@@ -24,7 +24,8 @@
       </div>
     </div>
 
-    <div class='delete-cooking'>
+    <div class='show-cooking-btns'>
+      <%= link_to "料理情報を編集する", edit_cooking_path, method: :get, class: 'edit-btn' %>
       <%= link_to "! この料理を削除する !", cooking_path, method: :delete, class: 'delete-btn' %>
     </div>
   </div>

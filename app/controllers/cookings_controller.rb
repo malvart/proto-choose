@@ -1,6 +1,7 @@
 class CookingsController < ApplicationController
   def index
     @cookings = Cooking.all.order('cooking_name ASC')
+    @random4 = Cooking.order("RAND()").limit(4)
   end
 
   def new
@@ -24,6 +25,19 @@ class CookingsController < ApplicationController
     @cooking = Cooking.find(params[:id])
     @cooking.destroy
     redirect_to root_path
+  end
+
+  def edit
+    @cooking = Cooking.find(params[:id])
+  end
+
+  def update
+    @cooking = Cooking.find(params[:id])
+    if @cooking.update(cooking_params)
+      redirect_to cooking_path(@cooking.id)
+    else
+      render :edit
+    end
   end
 
   def chooseIndex

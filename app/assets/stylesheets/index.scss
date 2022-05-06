@@ -79,7 +79,7 @@ a {
         background-color: #f8f4e6;
         color: black;
         padding: 6px 10px 7px;
-        border: 1.5px solid rgba(0, 0, 0, 0.5);
+        border: 1.5px solid #00000080;
         border-radius: 5px;
       }
     }
@@ -116,9 +116,58 @@ a {
     }
   }
 
-  .recommendation {
-    font-size: 18px;
-    font-family: '筑紫A丸ゴシック';
-    font-weight: bold;
+  .recommend {
+    width: 200px;
+    overflow: hidden;
+    .recommend-header {
+      font-size: 18px;
+      font-family: '筑紫A丸ゴシック';
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .recommend-content{
+      display: flex;
+      flex-direction: row;
+    }
+    .slide-recommend{
+      position: relative;
+      width: 400%;
+      animation: slider 20s infinite ease;
+      @keyframes slider {
+        0% {
+        transform: translateX(0);
+        }
+        25% {
+        transform: translateX(-186px);
+        }
+        50% {
+        transform: translateX(-376px);
+        }
+        75% {
+        transform: translate(-570px);
+        }
+        100% {
+        transform: translateX(0);
+        }
+      }
+      .slide-image {
+        background-color: white;
+        max-height: 123.43px;
+        border: 1.5px solid #00000080;
+        border-radius: 5px;
+        margin: 0 3px;
+      }
+      .slide-name{
+        background-color: #ffffff80;
+        color: black;
+        font-size: 14px;
+        font-family: '筑紫A丸ゴシック';
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        padding: 0 5px;
+        border-radius: 10px;
+      }
+    }
   }
 }
