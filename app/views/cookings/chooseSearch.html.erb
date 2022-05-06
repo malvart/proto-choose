@@ -32,6 +32,12 @@
 
       <% else %>
       <div class='no-there'>該当する料理がありません</div>
+      <div class='under-result'>
+        <div class='result-btns'>
+          <%= link_to '料理を追加する', new_cooking_path, class: 'new-path-btn', id: 'result-btn' %>
+          <%= link_to '条件ページに戻る', chooseIndex_cookings_path, class: 'back-path-btn', id: 'result-btn' %>
+        </div>
+      </div>
       <% end %>
     </div>
 
