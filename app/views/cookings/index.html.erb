@@ -92,9 +92,9 @@
 
 
 
-    <div class='side-bar' , id='main-flame'>
+    <div class='side-bar' >
 
-      <div class='recommend'>
+      <div class='recommend', id='main-flame'>
         <div class='recommend-header'>今日のおすすめ</div>
         <div class='recommend-content'>
 
@@ -103,9 +103,9 @@
           <div class='slide-recommend'>
           <%= link_to cooking_path(random.id), method: :get do %>
             <% if random.image.attached? %>
-            <%= image_tag random.image, class: 'slide-image' %>
+            <%= image_tag random.image, id: 'slide-image' %>
             <% else %>
-            <%= image_tag 'no_image_yoko.jpeg', class: 'slide-image' %>
+            <%= image_tag 'no_image_yoko.jpeg', id: 'slide-image' %>
             <% end %>
             <div class='slide-name'>
               <%= random.cooking_name %>

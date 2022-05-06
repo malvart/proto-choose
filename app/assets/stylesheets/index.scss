@@ -24,12 +24,6 @@ a {
     width: 750px;
   }
 
-  .side-bar {
-    background-color: #ffedab; //サンシャインイエロー
-    height: auto;
-    width: 250px;
-  }
-
   .heading {
     display: flex;
     justify-content: space-between;
@@ -116,57 +110,73 @@ a {
     }
   }
 
-  .recommend {
-    width: 200px;
-    overflow: hidden;
-    .recommend-header {
-      font-size: 18px;
-      font-family: '筑紫A丸ゴシック';
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-    .recommend-content{
-      display: flex;
-      flex-direction: row;
-    }
-    .slide-recommend{
-      position: relative;
-      width: 400%;
-      animation: slider 20s infinite ease;
-      @keyframes slider {
-        0% {
-        transform: translateX(0);
-        }
-        25% {
-        transform: translateX(-186px);
-        }
-        50% {
-        transform: translateX(-376px);
-        }
-        75% {
-        transform: translate(-570px);
-        }
-        100% {
-        transform: translateX(0);
-        }
-      }
-      .slide-image {
-        background-color: white;
-        max-height: 123.43px;
-        border: 1.5px solid #00000080;
-        border-radius: 5px;
-        margin: 0 3px;
-      }
-      .slide-name{
-        background-color: #ffffff80;
-        color: black;
-        font-size: 14px;
+  .side-bar {
+    .recommend {
+      background-color: #ffedab; //サンシャインイエロー
+      height: auto;
+      width: 250px;
+      .recommend-header {
+        font-size: 18px;
         font-family: '筑紫A丸ゴシック';
-        position: absolute;
-        bottom: 10px;
-        left: 10px;
-        padding: 0 5px;
-        border-radius: 10px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      .recommend-content {
+        display: flex;
+        flex-direction: row;
+        width: 186px;
+        overflow: hidden;
+      }
+
+      .slide-recommend {
+        position: relative;
+        animation: slider 20s infinite ease;
+        animation-delay: 3s;
+
+        @keyframes slider {
+          0% {
+            transform: translateX(0);
+          }
+
+          25% {
+            transform: translateX(-200px);
+          }
+
+          50% {
+            transform: translateX(-400px);
+          }
+
+          75% {
+            transform: translate(-600px);
+          }
+
+          100% {
+            transform: translateX(0);
+          }
+        }
+
+        #slide-image {
+          background-color: white;
+          max-height: 123.43px;
+          width: 186px;
+          border: 1.5px solid #00000080;
+          border-radius: 5px;
+          margin-right: 14px;
+        }
+
+        .slide-name {
+          background-color: #ffffff80;
+          color: black;
+          font-size: 14px;
+          font-family: '筑紫A丸ゴシック';
+          position: absolute;
+          bottom: 10px;
+          left: 10px;
+          padding: 0 5px;
+          border-radius: 10px;
+        }
       }
     }
   }
