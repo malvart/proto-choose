@@ -98,6 +98,12 @@ a {
       #lists {
         width: 50%;
         padding: 10px 20px;
+        .scroll-lists{
+          max-height: 150px;
+          overflow-y: scroll;
+          border-left: 1.5px dashed #00000080;
+          border-right: 1.5px dashed #00000080;
+        }
       }
 
       #list {
@@ -113,7 +119,6 @@ a {
   .side-bar {
     .recommend {
       background-color: #ffedab; //サンシャインイエロー
-      height: auto;
       width: 250px;
       .recommend-header {
         font-size: 18px;
@@ -167,7 +172,7 @@ a {
         }
 
         .slide-name {
-          background-color: #ffffff80;
+          background-color: #ffffffbf;
           color: black;
           font-size: 14px;
           font-family: '筑紫A丸ゴシック';
