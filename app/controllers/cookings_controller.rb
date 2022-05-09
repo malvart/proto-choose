@@ -40,6 +40,12 @@ class CookingsController < ApplicationController
     end
   end
 
+  def imageDestroy
+    @cooking = Cooking.find(params[:id])
+    @cooking.image.purge
+    redirect_to cooking_path(@cooking.id)
+  end
+
   def chooseIndex
     @q = Cooking.order("RAND()").limit(1).ransack(params[:q])
   end

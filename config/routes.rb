@@ -5,5 +5,8 @@ Rails.application.routes.draw do
       get 'chooseIndex'
       get 'chooseSearch'
     end
+    member do
+      get 'imageDestroy'
+    end
   end
 end

@@ -13,6 +13,9 @@
           <% else %>
           <%= image_tag 'no_image_yoko.jpeg', class: 'cooking-frame' %>
           <% end %>
+          <div class='delete-image'>
+            <%= link_to '画像削除', imageDestroy_cooking_path, method: :get, class:'delete-image' %>
+          </div>
         </div>
         <div class='ingredient'>
           <div class='ingredient-title'>─ 材料 ─</div>
