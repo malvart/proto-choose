@@ -1,7 +1,7 @@
 class CookingsController < ApplicationController
   def index
     @cookings = Cooking.all.order('cooking_name ASC')
-    @random4 = Cooking.order("RAND()").limit(4)
+    @random4 = Cooking.order('RAND()').limit(4)
   end
 
   def new
@@ -47,11 +47,11 @@ class CookingsController < ApplicationController
   end
 
   def chooseIndex
-    @q = Cooking.order("RAND()").limit(1).ransack(params[:q])
+    @q = Cooking.order('RAND()').limit(1).ransack(params[:q])
   end
 
   def chooseSearch
-    @q = Cooking.order("RAND()").limit(1).ransack(params[:q])
+    @q = Cooking.order('RAND()').limit(1).ransack(params[:q])
     @result = @q.result
     category_id = params[:q]
     staple_food_id = params[:q]
@@ -60,6 +60,7 @@ class CookingsController < ApplicationController
   end
 
   private
+
   def cooking_params
     params.require(:cooking).permit(:cooking_name, :category_id, :staple_food_id,
                                     :main_dish_id, :side_dish_id, :image)

@@ -9,13 +9,14 @@ class Cooking < ApplicationRecord
   with_options presence: true do
     validates :cooking_name
   end
-  with_options numericality: { other_than: 1, message: "を入力してください" } do
+  with_options numericality: { other_than: 1, message: 'を入力してください' } do
     validates :category_id
   end
 
   validate :category_valid
-  
+
   private
+
   def category_valid
     sfi = (staple_food_id == 1)
     mdi = (main_dish_id == 1)

@@ -9,5 +9,4 @@ class StapleFood < ActiveHash::Base
 
   include ActiveHash::Associations
   has_many :cookings
-  
 end
