@@ -1,24 +1,11 @@
-# README
+# 概要
+こちらはオリジナルアプリ[Choose](https://github.com/malvart/choose)のプロトタイプとなっています。<br>
+本番の前にデータベース設計に問題がないかなどを見るために作りました。<br>
+一部、本番側のREADMEの内容を前提にしている箇所があります。先に[こちら(本番のGitHub)](https://github.com/malvart/choose)をご覧ください。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 本番と違う点・作った理由等
+- カテゴリのデータをActiveHash(Gem使用)で管理<br>
+➡️ カテゴリで条件を絞ったランダム選択を、ちゃんと機能する形で実装できるか試す上で、カテゴリのデータ管理をシンプルにしたかったため。
+- ランダム選択におけるカテゴリ条件の絞り方
+- ビュー<br>
+➡️ 1からビューを作るのも初めてのため仮で作りたく、また問題なければそのまま本番に流用できるため。
